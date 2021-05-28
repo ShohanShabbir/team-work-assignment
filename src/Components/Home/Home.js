@@ -1,9 +1,12 @@
 import React from 'react';
+import MainSec from '../MainSec/MainSec';
+import Navber from '../Navber/Navber';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Team Work Assignment</h1>
+            <Navber></Navber>
+            <MainSec></MainSec>
         </div>
     );
 };

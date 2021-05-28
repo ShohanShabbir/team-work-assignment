@@ -1,13 +1,16 @@
 
 import './App.css';
-import Deshborad from './Components/Deshborad/Deshborad';
+import Cart from './Components/Cart/Cart';
 import Home from './Components/Home/Home';
+import Shop from './Components/Shop/Shop';
 
 function App() {
   return (
     <div>
      <Home></Home>
-     <Deshborad></Deshborad>
+     
+     <Shop></Shop>
+     <Cart></Cart>
     </div>
   );
 }
