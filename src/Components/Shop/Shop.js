@@ -25,7 +25,7 @@ const Shop = (props) => {
         <div className="col-sm-8">
           <div className="row">
             {products.map((pd) => (
-              <Product product={pd} key={pd.id} addToCart={addToCart}></Product>
+              <Product pd={pd} key={pd.id} addToCart={addToCart}></Product>
             ))}
           </div>
         </div>

@@ -4,6 +4,7 @@ import { removeFromCart } from "../../redux/action/cartAction";
 
 const Cart = (props) => {
   const { cart, removeFromCart } = props;
+  console.log(props);
 
   console.log(props);
   return (
