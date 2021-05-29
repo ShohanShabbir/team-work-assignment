@@ -6,42 +6,42 @@ const initialState = {
     {
       name: "T-Shirt 1",
       img: img1,
-      price: "$56",
+      price: 56,
       tex: "10%",
       id: 1,
     },
     {
       name: "T-Shirt 2",
       img: img1,
-      price: "$56",
+      price: 56,
       tex: "10%",
       id: 2,
     },
     {
       name: "T-Shirt 3",
       img: img1,
-      price: "$71",
+      price: 71,
       tex: "10%",
       id: 3,
     },
     {
       name: "T-Shirt 4",
       img: img1,
-      price: "$89",
+      price: 89,
       tex: "10%",
       id: 4,
     },
     {
       name: "T-Shirt 5",
       img: img1,
-      price: "$32",
+      price: 32,
       tex: "10%",
       id: 5,
     },
     {
       name: "T-Shirt 6",
       img: img1,
-      price: "$122",
+      price: 12,
       tex: "10%",
       id: 6,
     },
@@ -53,11 +53,12 @@ const cartReducers = (state = initialState, action) => {
     case ADD_TO_CART:
       const newID = action.id;
       const newCart = [...state.cart, newID];
-      return { products: state.products, cart: newCart };
+      return { ...state, cart: newCart };
+    //products: state.products
     case REMOVE_FROM_CART:
       const id = action.id;
       const remainingCart = state.cart.filter((item) => item !== id);
-      return { cart: remainingCart };
+      return { ...state, cart: remainingCart };
     default:
       return state;
   }

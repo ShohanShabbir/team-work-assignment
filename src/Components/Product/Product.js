@@ -1,7 +1,8 @@
 import React from "react";
 import "./Product.css";
+import { Link } from "react-router-dom";
 const Product = (props) => {
-  console.log(props);
+  // console.log(props);
   const { pd, addToCart } = props;
   /////////////
   // const addToCart = (pd) => {
@@ -24,7 +25,7 @@ const Product = (props) => {
           </h5>
 
           <button className="btn btn-success" onClick={() => addToCart(pd.id)}>
-            Add to cart
+            add to cart
           </button>
         </div>
       </div>

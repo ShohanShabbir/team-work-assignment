@@ -6,7 +6,7 @@ import Product from "../Product/Product";
 import SelectedProduct from "../SelectedProduct/SelectedProduct";
 
 const Shop = (props) => {
-  console.log(props);
+  // console.log(props);
   const { products, addToCart } = props;
   //////////
 

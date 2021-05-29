@@ -1,7 +1,6 @@
 import React from "react";
 
-const SelectedProduct = ({ selcProduct }) => {
-  console.log(selcProduct);
+const SelectedProduct = () => {
   return <div></div>;
 };
 
