@@ -7,14 +7,14 @@ const Product = (props) => {
 
   ////////////
   return (
-    <div className=" col-sm-4">
+    <div className=" col-sm-6 col-md-4 ">
       <div style={{ border: "1px solid gray", margin: "15px 0px" }}>
         <img src={product.img} alt="" style={{ width: "100%" }} />
         <div className="product-details">
           <h5>
             {" "}
             <small>{product.name}</small>{" "}
-            <small style={{ color: "gray", padding: "0px 10px" }}>
+            <small style={{ color: "gray", padding: "0px 5px" }}>
               {product.tex}
             </small>
             <big style={{ float: "right", color: "#ff5201" }}>

@@ -12,7 +12,11 @@ const Shop = (props) => {
 
   const addToCart = (pd) => {
     console.log(pd);
+
     setSelcProduct(pd);
+    // const sameProduct = pro.filter((prd) => prd.key === pd.key);
+    // const count = sameProduct.length;
+    //localStorage.setItem(pd.key, count);
   };
   //////////
   return (
