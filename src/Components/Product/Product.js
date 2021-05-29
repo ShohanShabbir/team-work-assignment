@@ -4,7 +4,10 @@ const Product = (props) => {
   console.log(props);
   const { product, addToCart } = props;
   /////////////
+  // const addToCart = (pd) => {
+  //   console.log(pd);
 
+  // };
   ////////////
   return (
     <div className=" col-sm-6 col-md-4 ">
@@ -24,7 +27,7 @@ const Product = (props) => {
 
           <button
             className="btn btn-success"
-            onClick={() => addToCart(product)}
+            onClick={() => addToCart(product.props)}
           >
             Add to cart
           </button>

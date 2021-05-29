@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../../redux/action/cartAction";
+import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import SelectedProduct from "../SelectedProduct/SelectedProduct";
 
 const Shop = (props) => {
   console.log(props);
-  const { products } = props;
+  const { products, addToCart } = props;
   //////////
-  const [selcProduct, setSelcProduct] = useState({});
 
-  const addToCart = (pd) => {
-    console.log(pd);
+  // const addToCart = (pd) => {
+  //   console.log(pd);
 
-    setSelcProduct(pd);
-    // const sameProduct = pro.filter((prd) => prd.key === pd.key);
-    // const count = sameProduct.length;
-    //localStorage.setItem(pd.key, count);
-  };
+  //   setSelcProduct(pd);
+  //   // const sameProduct = pro.filter((prd) => prd.key === pd.key);
+  //   // const count = sameProduct.length;
+  //   //localStorage.setItem(pd.key, count);
+  // };
   //////////
   return (
     <div className="container">
@@ -30,7 +30,8 @@ const Shop = (props) => {
           </div>
         </div>
         <div className="col-sm-4">
-          <SelectedProduct selcProduct={selcProduct}></SelectedProduct>
+          <SelectedProduct></SelectedProduct>
+          <Cart></Cart>
         </div>
       </div>
     </div>
