@@ -25,7 +25,7 @@ const Product = (props) => {
             <big style={{ float: "right", color: "#ff5201" }}>${pd.price}</big>
           </h5>
 
-          <button className="btn btn-success" onClick={() => addToCart(pd.id)}>
+          <button className="btn btn-outline-success" onClick={() => addToCart(pd.id)}>
             Add to cart
         </button>
         </div>

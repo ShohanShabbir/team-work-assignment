@@ -4,10 +4,10 @@ import logo from '../../images/logo.png';
 
 const Navber = () => {
     return (
-        <div style={{backgroundColor: 'rgb(206, 197, 197, 0.5)'}}>
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div style={{backgroundColor: 'rgb(61,72,83,0.7)'}}>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
                 <div class="container-fluid navbar-font">
-                    <a class="navbar-brand" href="#"><img style={{height:'100px'}} src={logo} alt="" /></a>
+                    <a class="navbar-brand" href="#"><img style={{height:'80px'}} src={logo} alt="" /></a>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">

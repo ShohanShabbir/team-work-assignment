@@ -13,7 +13,7 @@ const Design = () => {
                 <div className="col-md-7 mt-5">
                     <h3>Choose the custom apparel you <br /> want to Buy</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non doloribus quae provident nulla ipsa magni iure quia nihil vel aliquid perspiciatis odio labore nemo sed, unde consectetur ea fugit?</p>
-                    <button className="btn btn-success">Choose Yours</button>
+                    <button className="btn btn-outline-danger text-white">See Full Catalog</button>
                 </div>
                 <div className="col-md-5">
                     <div id="carouselExampleControls" class="carousel slide bg-transparent" data-bs-ride="carousel">

@@ -1,6 +1,8 @@
 import React from 'react';
 import './MainSec.css';
 import champion from '../../images/campaigns-hero-removebg-preview.png';
+import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 
 const MainSec = () => {
     return (
@@ -12,17 +14,21 @@ const MainSec = () => {
                     <button className="btn btn-warning">GET NOW</button>
                 </div>
             </main> */}
-            <main>
+            <main className="text-white">
                 <div className="container">
                     <div className="row d-flex  align-items-center main">
-                        <div className="col-md-6 col-12">
-                            <h3 style={{fontFamily:'Quicksand',fontWeight:'700', fontSize:'30px'}}>The easy way to design and sell <br/> t-shirts online</h3>
-                            <h6 style={{fontFamily:'Quicksand',fontWeight:'700'}} className="mt-2 text-secondary">100% Cotton Great Fabrics</h6>
-                            <button className="btn btn-success mt-3">Get Yours Now</button>
-                        </div>
-                        <div className="col-md-6 mt-3 col-12 image">
-                            <img style={{height:'400px'}} src={champion} alt="" />
-                        </div>
+                        <Fade left>
+                            <div className="col-md-6 col-12">
+                                <h3 style={{ fontFamily: 'Quicksand', fontWeight: '700', fontSize: '30px' }}>The easy way to design and sell <br /> t-shirts online</h3>
+                                <h6 style={{ fontFamily: 'Quicksand', fontWeight: '700' }} className="mt-2">100% Cotton Great Fabrics</h6>
+                                <Bounce left><button className="btn btn-outline-danger mt-3 text-white">Get Yours Now</button></Bounce>    
+                            </div>
+                        </Fade>
+                        <Fade right>
+                            <div className="col-md-6 mt-3 col-12 image">
+                                <img style={{ height: '400px' }} src={champion} alt="" />
+                            </div>
+                        </Fade>
                     </div>
                 </div>
             </main>
