@@ -1,6 +1,17 @@
 .headerSec {
-    height:600px;
+    height:500px;
+    width: 100%;
     position:relative;
-    background-image: url('../../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg');
-    background-size: cover;
+    background-color: rgb(206, 197, 197, 0.5);
+  }
+  @media (max-width: 768px) {
+
+    .main h3{
+      margin-top: 200px;
+    }
+
+    .main .image img{
+     display: none;
+    }
+    
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Design from '../Design/Design';
 import MainSec from '../MainSec/MainSec';
 import Navber from '../Navber/Navber';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Navber></Navber>
             <MainSec></MainSec>
+            
         </div>
     );
 };

@@ -1,6 +1,7 @@
-.nav-font{
-    background-color: blueviolet;
-    text-decoration: none;
+.navbar-font{
+    font-family: 'Quicksand';
+    font-weight: 900;
+    font-size: 18px;
 }
 
 
