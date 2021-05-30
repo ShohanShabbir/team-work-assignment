@@ -20,6 +20,9 @@ const Navber = () => {
                         <li className="nav-item mr-3 p-1">
                             <a className="nav-link text-dark" href="#">Contact Us</a>
                         </li>
+                        <li className="nav-item mr-3 p-1">
+                            <a className="nav-link text-dark" href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
